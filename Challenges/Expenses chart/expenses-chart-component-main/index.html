@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./Style.css">
+  <script src="./Script.js"></script>
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="expense-chart">
+    <header id="balance">
+      <div>
+        <h1>My balance</h1>
+        <p>$921.48</p>
+      </div>
+      <img src="./images/logo.svg" alt="" id="img">
+    </header>
+
+    <main>
+      <h2>Spending - Last 7 days</h2>
+
+      <div id="expenses">
+        <div class="graph">
+          <div id="chart1"> </div>
+          <p id="d1" class="dayname">mon</p>
+        </div>
+        <div class="graph">
+          <div id="chart2"> </div>
+          <p id="d2" class="dayname">tue</p>
+        </div>
+        <div class="graph">
+          <div id="chart3"> </div>
+          <p id="d3" class="dayname">wed</p>
+        </div>
+        <div class="graph">
+          <div id="chart4"> </div>
+          <p id="d4" class="dayname">thu</p>
+        </div>
+        <div class="graph">
+          <div id="chart5"> </div>
+          <p id="d5" class="dayname">fry</p>
+        </div>
+        <div class="graph">
+          <div id="chart6"> </div>
+          <p id="d6" class="dayname">sat</p>
+        </div>
+        <div class="graph">
+          <div id="chart7"> </div>
+          <p id="d7" class="dayname">sun</p>
+        </div>
+      </div>
+
+      <footer>
+        <div id="total">
+          <p id="TotalWeek">Total this week</p>
+          <p id="totMoney">$0.00</p>
+        </div>
+        <div id="compare">
+          <p id="compareMoney">0%</p>
+          <p id="compareWeek">From last week</p>
+        </div>
+      </footer>
+    </main>
+    <footer id="inputs">
+      <input type="number" id="mon" placeholder="mon" class="inputsButtons">
+      <input type="number" id="tue" placeholder="tue" class="inputsButtons">
+      <input type="number" id="wed" placeholder="wed" class="inputsButtons">
+      <input type="number" id="thu" placeholder="thu" class="inputsButtons">
+      <input type="number" id="fry" placeholder="fri" class="inputsButtons">
+      <input type="number" id="sat" placeholder="sat" class="inputsButtons">
+      <input type="number" id="sun" placeholder="sun" class="inputsButtons">
+      <button id="btn" class="inputsButtons">Register</button>
+    </footer>
+  </div>
+</body>
+
+<script src="./Script.js"></script>
+
+</html>
