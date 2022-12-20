@@ -55,8 +55,11 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
-#img {
+#image {
     padding-right: 7%;
+}
+
+#image img {
     scale: 1.1;
 }
 
@@ -338,7 +341,7 @@ main footer {
         font-size: 1.6em;
     }
 
-    #img {
+    #image img {
         scale: 1;
     }
 
