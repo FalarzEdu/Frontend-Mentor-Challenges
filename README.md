@@ -1,4 +1,3 @@
 # FrontendMentor-Challenges
 
-<link href="expenses-chart-component-main">
-[Add solution URL here](expenses-chart-component-main)
+[02 - Expenses Chart](https://falarzedu.github.io/FrontendMentor-Challenges/Challenges/Expenses%20chart/expenses-chart-component-main/)
