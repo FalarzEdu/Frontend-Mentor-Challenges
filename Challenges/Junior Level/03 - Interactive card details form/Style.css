@@ -36,8 +36,7 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 20% 60% 20%;
     grid-gap: 40px 0;
-    z-index: 2;
-    scale: 0.9;
+    z-index: 2
 }
 
 #card1 {
@@ -109,11 +108,11 @@ body {
 
 #cardCode {
     position: absolute;
-    top: 98px;
-    right: 60px;
+    top: 88px;
+    right: 45px;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 500;
-    font-size: .9em;
+    font-size: 1.1rem;
     letter-spacing: .15em;
     color: white;
 }
@@ -136,6 +135,7 @@ body {
     width: 21rem;
     padding: 0 10% 0 20%;
     gap: 20px;
+    scale: 1.1;
 }
 
 #data p {
@@ -293,81 +293,52 @@ input:focus {
     color: hsla(279, 6%, 55%);
 }
 
+/*<><><><><><><><><><><> SCREEN SIZES <><><><><><><><><><><>*/
+
 @media screen and (max-width: 1300px) {
     #cards {
-        height: 30rem;
-        width: 30rem;
-    }
-
-    #cardCode {
-        position: absolute;
-        top: 86px;
-        right: 48px;
-        font-family: "Space Grotesk", sans-serif;
-        font-weight: 500;
-        font-size: 0.9em;
-        letter-spacing: 0.15em;
-        color: white;
+        scale: 0.9;
+        left: 120px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     #cards {
-        left: 120px;
-        height: 28rem;
-        width: 28rem;
-    }
-
-    #cardCode {
-        position: absolute;
-        top: 78px;
-        right: 46px;
-        font-family: "Space Grotesk", sans-serif;
-        font-weight: 500;
-        font-size: 0.9em;
-        letter-spacing: 0.15em;
-        color: white;
+        scale: 0.9;
+        left: 60px;
     }
 }
 
 @media screen and (max-width: 1100px) {
     #cards {
-        left: 80px;
-        height: 28rem;
-        width: 28rem;
+        left: 20px;
+        scale: 0.8;
     }
-}
 
-@media screen and (max-width: 1050px) {
-    #cards {
-        left: 60px;
-        height: 28rem;
-        width: 28rem;
+    #data {
+        scale: 1;
     }
 }
 
 @media screen and (max-width: 1000px) {
     #cards {
-        left: 60px;
-        height: 26rem;
-        width: 26rem;
+        left: -20px;
+        scale: 0.7;
+    }
+
+    #data {
+        scale: 1;
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
     body {
         flex-direction: column;
     }
 
     #color-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(./images/bg-main-desktop.png);
         width: 100%;
-        min-height: 40%;
-        z-index: 1;
-        position: relative;
+        min-height: 38%;
         background-size: cover;
     }
 
@@ -376,55 +347,67 @@ input:focus {
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: 60%;
+        min-height: 62%;
         z-index: 1;
     }
 
     #cards {
-        position: absolute;
-        left: 32%;
-        top: -15px;
-        height: 22rem;
-        width: 25rem;
         display: flex;
+        position: static;
+        height: auto;
+        width: auto;
         flex-direction: column;
-        grid-gap: 0 0;
-        z-index: 2;
+        margin: auto;
+        padding-left: 10%;
+        gap: 0;
         scale: 0.9;
     }
 
     #card1 {
-        display: flex;
-        height: 13rem;
-        width: 21rem;
-        flex-direction: column;
-        border-radius: 15px;
-        background-image: url(./images/bg-card-front.png);
-        background-size: cover;
-        /* order: 1; */
         position: absolute;
         top: 109px;
+        right: 80px;
+        height: 12rem;
+        width: 22rem;
         z-index: 2;
+        order: 2;
     }
 
     #card2 {
-        position: relative;
-        display: flex;
         height: 12rem;
-        width: 21rem;
-        border-radius: 15px;
-        background-image: url(./images/bg-card-back.png);
-        background-size: cover;
-        align-self: end;
+        width: 22rem;
+        align-self: flex-end;
+    }
+
+    #cardCode {
+        top: 70px;
+        font-size: 1rem;
+    }
+
+    #cardNumber {
+        font-size: 1.4rem;
+    }
+
+    #cardValidity,
+    #cardName {
+        font-size: 0.8rem;
+    }
+
+    #data {
+        gap: 5px;
+        margin-top: 3rem;
+        height: auto;
+        padding: 0;
     }
 }
 
+@media screen and (max-width: 420px) {
+    #cards {
+        scale: 0.8;
+        padding-left: 22%;
+    }
 
-
-/* 
-#26023B
-#8C3DBA
-#652C86
-#7806BA
-#47036E
-*/
+    #data {
+        gap: 1vh;
+    }
+}
