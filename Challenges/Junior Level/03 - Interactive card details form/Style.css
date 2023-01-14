@@ -5,7 +5,7 @@ body {
     display: flex;
     max-width: 1440px;
     height: 100vh;
-    max-height: 960px;
+    max-height: 1080px;
     margin: auto;
 }
 
@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url(./images/bg-main-desktop.png);
+    background-size: cover;
     width: 30%;
     min-height: 100%;
     z-index: 1;
