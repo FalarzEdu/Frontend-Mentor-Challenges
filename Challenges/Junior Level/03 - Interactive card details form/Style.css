@@ -11,7 +11,7 @@ body {
     display: flex;
     max-width: 1440px;
     height: 100vh;
-    max-height: 753px;
+    max-height: 800px;
     margin: auto;
 }
 
@@ -398,6 +398,12 @@ input:focus {
         margin-top: 3rem;
         height: auto;
         padding: 0;
+    }
+
+    #complete {
+        margin: auto;
+        padding: 10% 15%;
+        height: auto;
     }
 }
 

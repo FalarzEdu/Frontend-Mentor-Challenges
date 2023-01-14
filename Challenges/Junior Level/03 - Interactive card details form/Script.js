@@ -77,7 +77,7 @@ submit.addEventListener('click', (e) => {
     }
 })
 
-//THESE TWO FUNCTIONS MAKE THE BORDER CHANGE AND THE MESSAGE OF ERROR APPEAR OR DISAPPEAR IF THE INPUTS ARE VALID OR NOT
+//THESE TWO FUNCTIONS MAKE THE BORDER CHANGE AND THE ERROR MESSAGE APPEAR OR DISAPPEAR IF THE INPUTS ARE VALID OR NOT
 function genValidationInvalid(input, message) {
     const parent = input.parentElement;
     const small = parent.querySelector('small');
