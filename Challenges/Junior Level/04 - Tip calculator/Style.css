@@ -1,0 +1,91 @@
+/*
+* {
+    border: 1px solid red;
+}
+*/
+
+body {
+    max-width: 1440px;
+    max-height: 800px;
+    background-color: hsl(185, 41%, 83%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#splitter {
+    margin-top: 15%;
+}
+
+h1 {
+    font-family: "Space Mono";
+    letter-spacing: 1rem;
+    font-size: 1.8rem;
+    color: hsl(183, 100%, 15%);
+}
+
+main {
+    display: flex;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 5%;
+    width: 60%;
+}
+
+section {
+    margin: 3%;
+    width: 50%;
+}
+
+.inputs {
+    height: 2rem;
+    background-color: hsl(189, 41%, 97%);
+    border: 1px solid hsl(189, 41%, 97%);
+    border-radius: 5px;
+    font-family: "Space Mono";
+    font-size: 1.4rem;
+    text-align: end;
+}
+
+section header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+section header img {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+
+section div button {
+    box-sizing: border-box;
+    margin: 2% 2%;
+    width: 6.8rem;
+    height: 3rem;
+}
+
+section div input {
+    box-sizing: border-box;
+    border: 1px solid black !important;
+    margin: 2% 2%;
+    width: 6.8rem;
+    height: 3rem !important;
+    text-align: center !important;
+}
+
+section footer {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    background-color: hsl(183, 100%, 15%);
+    margin: 3%;
+    border-radius: 15px;
+    width: 50%;
+}
