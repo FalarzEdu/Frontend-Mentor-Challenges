@@ -16,13 +16,13 @@ body {
 }
 
 #splitter {
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 h1 {
     font-family: "Space Mono";
-    letter-spacing: 1rem;
-    font-size: 1.8rem;
+    letter-spacing: 0.9rem;
+    font-size: 1.3rem;
     color: hsl(183, 100%, 15%);
 }
 
@@ -32,11 +32,28 @@ main {
     background-color: white;
     border-radius: 15px;
     margin-top: 5%;
-    width: 60%;
+    width: 50%;
+}
+
+label {
+    margin-bottom: 10px;
+    font-family: "Space Mono";
+    color: hsl(184, 14%, 56%);
+    font-size: 0.8rem;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+div p {
+    margin: 40px 0 10px 0;
+    font-family: "Space Mono";
+    color: hsl(184, 14%, 56%);
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 section {
-    margin: 3%;
+    margin: 6% 3% 5% 5%;
     width: 50%;
 }
 
@@ -44,10 +61,21 @@ section {
     height: 2rem;
     background-color: hsl(189, 41%, 97%);
     border: 1px solid hsl(189, 41%, 97%);
+    outline-color: hsl(172, 67%, 45%);
     border-radius: 5px;
     font-family: "Space Mono";
     font-size: 1.4rem;
     text-align: end;
+    padding-right: 1rem;
+}
+
+.inputs::placeholder {
+    color: hsl(184, 14%, 56%);
+    font-size: 20px;
+}
+
+#custom::placeholder {
+    color: hsl(186, 14%, 43%)
 }
 
 section header {
@@ -58,34 +86,138 @@ section header {
 
 section header img {
     position: absolute;
-    top: 20px;
-    left: 5px;
+    top: 38px;
+    left: 15px;
+    scale: 0.8;
 }
 
-section div button {
-    box-sizing: border-box;
-    margin: 2% 2%;
-    width: 6.8rem;
-    height: 3rem;
+footer img {
+    position: absolute;
+    top: 38px;
+    left: 15px;
+    scale: 0.8;
 }
 
-section div input {
+#btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2.5rem;
+}
+
+#btn button {
+    flex: 1 1 90px;
     box-sizing: border-box;
-    border: 1px solid black !important;
-    margin: 2% 2%;
-    width: 6.8rem;
-    height: 3rem !important;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-family: "Space Mono";
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.active {
+    background-color: hsl(172, 67%, 45%) !important;
+    color: hsl(183, 100%, 15%) !important;
+}
+
+#btn button:hover {
+    background-color: hsla(172, 67%, 45%, 0.677);
+    color: hsl(183, 100%, 15%);
+}
+
+#btn input {
+    flex: 1 1 90px;
+    box-sizing: border-box;
+    border: none !important;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%) !important;
+    width: 80px;
+    height: 40px !important;
     text-align: center !important;
+    font-size: 1.2rem !important;
+    padding-right: 0 !important;
 }
 
 section footer {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
 
-aside {
+#tipResults {
+    display: flex;
+    flex-direction: column;
     background-color: hsl(183, 100%, 15%);
     margin: 3%;
     border-radius: 15px;
     width: 50%;
+}
+
+#amount {
+    display: flex;
+    justify-content: space-between;
+    margin: 15% 10% 5% 10%;
+}
+
+#amount div,
+#amount p,
+#tot div,
+#tot p {
+    margin: 0;
+    align-self: center;
+}
+
+#tipNumber,
+#totalNumber {
+    font-size: 2.4rem;
+    color: hsl(172, 67%, 45%);
+}
+
+#tipAmt,
+#Total {
+    font-size: .8rem;
+    color: white;
+}
+
+#tipPerson,
+#totalPerson {
+    font-size: .7rem;
+}
+
+#tot {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10% 5% 10%;
+}
+
+#tot p {
+    margin: 0;
+    align-self: center;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12%;
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+#resetBtn {
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(186, 80%, 23%);
+    font-family: 'Space Mono';
+    color: hsl(183, 100%, 15%);
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
 }

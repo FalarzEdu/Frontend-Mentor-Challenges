@@ -29,38 +29,44 @@
         <input id="bill" class="inputs" name="bill" type="text" placeholder="0">
       </header>
       <div>
-        <p>Select Tip %</p>
-        <button>5%</button>
-        <button>10%</button>
-        <button>15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <input type="text" class="inputs" name="custom" id="custom" placeholder="Custom">
+        <div>
+          <p>Select Tip %</p>
+        </div>
+        <div id="btn">
+          <button id="btn1">5%</button>
+          <button id="btn2">10%</button>
+          <button id="btn3">15%</button>
+          <button id="btn4">25%</button>
+          <button id="btn5">50%</button>
+          <input type="text" class="inputs" name="custom" id="custom" placeholder="Custom">
+        </div>
       </div>
       <footer>
+        <img src="./images/icon-person.svg" alt="Person's icon">
         <label for="nbrPerson">Number of People</label>
         <input type="text" class="inputs" name="nbrPerson" id="nbrPerson" placeholder="0">
       </footer>
     </section>
 
     <aside id="tipResults">
-      <div>
+      <div id="amount">
         <div>
           <p id="tipAmt">Tip Amount</p>
           <p id="tipPerson">/ person</p>
         </div>
-        <p id="tipNumber"></p>
+        <p id="tipNumber">$0.00</p>
       </div>
-      <div>
-        <p id="Total">Total</p>
-        <p id="totalPerson"> / person</p>
-        <p id="totalNumber"></p>
+      <div id="tot">
+        <div>
+          <p id="Total">Total</p>
+          <p id="totalPerson"> / person</p>
+        </div>
+        <p id="totalNumber">$0.00</p>
       </div>
-      <div>
-        <button id="reset">Reset</button>
+      <div id="reset">
+        <button id="resetBtn">RESET</button>
       </div>
     </aside>
-
   </main>
 
   <!--------------------
@@ -70,5 +76,6 @@
   </div>
   ------------------------>
 </body>
+<script src="./Script.js"></script>
 
 </html>
