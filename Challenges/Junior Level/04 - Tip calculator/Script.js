@@ -1,3 +1,5 @@
+/*
+
 var percentage = 0;
 const btn1 = document.querySelector("#btn1");
 const btn2 = document.querySelector("#btn2");
@@ -8,9 +10,6 @@ const cust = document.querySelector("#custom");
 
 document.querySelector("#bill").addEventListener('keyup', calcTip);
 document.querySelector("#nbrPerson").addEventListener('keyup', calcTip);
-
-//document.querySelector("#bill").addEventListener('focusout', () => {});
-//document.querySelector("#nbrPerson").addEventListener('focusout', invalid);
 
 btn1.addEventListener('click', () => { btn1.classList.add("active"); btn2.classList.remove("active"); btn3.classList.remove("active"); btn4.classList.remove("active"); btn5.classList.remove("active"); cust.value = ""; percentage = 0.05; calcTip(); });
 
@@ -32,7 +31,7 @@ function calcTip() {
     const bill = Number(document.querySelector("#bill").value);
     const numberPerson = Number(document.querySelector("#nbrPerson").value);
 
-    if (bill != NaN && bill != 0 && percentage != 0 && numberPerson != NaN && numberPerson != 0) {
+    if ((bill > -Infinity && bill < Infinity) && bill != 0 && percentage != 0 && (numberPerson > -Infinity && numberPerson < Infinity) && numberPerson != 0) {
         document.querySelector("#tipNumber").innerHTML = "$" + ((bill * percentage) / numberPerson).toFixed(2);
         document.querySelector("#totalNumber").innerHTML = "$" + ((bill + (bill * percentage)) / numberPerson).toFixed(2);
     }
@@ -40,6 +39,43 @@ function calcTip() {
         document.querySelector("#tipNumber").innerHTML = "$0.00";
         document.querySelector("#totalNumber").innerHTML = "$0.00";
     }
+}
+
+*/
+
+function changeColor(button) {
+    var btn = document.getElementById(button);
+
+    document.querySelector('#btn').querySelectorAll('button').forEach(classList.remove('active'));
+    btn.classList.add("active");
+}
+
+function validation(elemen) {
+    const elm = document.getElementById(elemen);
+    const elmValue = parseFloat(elm.value);
+    const small = elm.parentElement.querySelector('div').querySelector('small');
+
+    if (elmValue == 0) {
+        elm.style.borderColor = 'red';
+        small.innerHTML = "Can't be zero!";
+        small.style.visibility = 'visible';
+    }
+    else if ((elmValue > -Infinity && elmValue < Infinity) == false) {
+        elm.style.borderColor = 'red';
+        small.innerHTML = "Can't be blank!";
+        small.style.visibility = 'visible';
+    }
+    else if ((elmValue > 0 && elmValue < Infinity) == false) {
+        elm.style.borderColor = 'red';
+        small.innerHTML = "Can't be negative!";
+        small.style.visibility = 'visible';
+    }
+    else {
+        elm.style.borderColor = 'hsl(189, 41%, 97%)'
+        small.innerHTML = "";
+        small.style.visibility = 'hidden';
+    }
+
 }
 
 

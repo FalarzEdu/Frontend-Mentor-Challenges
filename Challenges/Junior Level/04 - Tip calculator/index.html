@@ -25,26 +25,32 @@
     <section>
       <header>
         <img src="./images/icon-dollar.svg" alt="Dolar icon">
-        <label for="bill">Bill</label>
-        <input id="bill" class="inputs" name="bill" type="text" placeholder="0">
+        <div>
+          <label for="bill">Bill</label>
+          <small></small>
+        </div>
+        <input id="bill" class="inputs" name="bill" type="text" placeholder="0" onblur="validation(this.id)">
       </header>
       <div>
         <div>
           <p>Select Tip %</p>
         </div>
         <div id="btn">
-          <button id="btn1">5%</button>
-          <button id="btn2">10%</button>
-          <button id="btn3">15%</button>
-          <button id="btn4">25%</button>
-          <button id="btn5">50%</button>
+          <button id="btn1" onclick="changeColor(this.id)">5%</button>
+          <button id="btn2" onclick="changeColor(this.id)">10%</button>
+          <button id="btn3" onclick="changeColor(this.id)">15%</button>
+          <button id="btn4" onclick="changeColor(this.id)">25%</button>
+          <button id="btn5" onclick="changeColor(this.id)">50%</button>
           <input type="text" class="inputs" name="custom" id="custom" placeholder="Custom">
         </div>
       </div>
       <footer>
         <img src="./images/icon-person.svg" alt="Person's icon">
-        <label for="nbrPerson">Number of People</label>
-        <input type="text" class="inputs" name="nbrPerson" id="nbrPerson" placeholder="0">
+        <div>
+          <label for="nbrPerson">Number of People</label>
+          <small></small>
+        </div>
+        <input type="text" class="inputs" name="nbrPerson" id="nbrPerson" placeholder="0" onblur="validation(this.id)">
       </footer>
     </section>
 
