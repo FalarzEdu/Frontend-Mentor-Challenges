@@ -29,19 +29,20 @@
           <label for="bill">Bill</label>
           <small></small>
         </div>
-        <input id="bill" class="inputs" name="bill" type="text" placeholder="0" onblur="validation(this.id)">
+        <input id="bill" class="inputs" name="bill" type="text" placeholder="0" onkeyup="validation(this.id)">
       </header>
       <div>
         <div>
           <p>Select Tip %</p>
         </div>
         <div id="btn">
-          <button id="btn1" onclick="changeColor(this.id)">5%</button>
-          <button id="btn2" onclick="changeColor(this.id)">10%</button>
-          <button id="btn3" onclick="changeColor(this.id)">15%</button>
-          <button id="btn4" onclick="changeColor(this.id)">25%</button>
-          <button id="btn5" onclick="changeColor(this.id)">50%</button>
-          <input type="text" class="inputs" name="custom" id="custom" placeholder="Custom">
+          <button id="btn1" onclick="changeColor(this.id), valueCalc()">5%</button>
+          <button id="btn2" onclick="changeColor(this.id), valueCalc()">10%</button>
+          <button id="btn3" onclick="changeColor(this.id), valueCalc()">15%</button>
+          <button id="btn4" onclick="changeColor(this.id), valueCalc()">25%</button>
+          <button id="btn5" onclick="changeColor(this.id), valueCalc()">50%</button>
+          <input type="text" class="inputs" name="custom" id="custom" onkeyup="changeColor(this.id)"
+            onclick="changeColor(this.id)" placeholder="Custom">
         </div>
       </div>
       <footer>
@@ -50,7 +51,7 @@
           <label for="nbrPerson">Number of People</label>
           <small></small>
         </div>
-        <input type="text" class="inputs" name="nbrPerson" id="nbrPerson" placeholder="0" onblur="validation(this.id)">
+        <input type="text" class="inputs" name="nbrPerson" id="nbrPerson" placeholder="0" onkeyup="validation(this.id)">
       </footer>
     </section>
 

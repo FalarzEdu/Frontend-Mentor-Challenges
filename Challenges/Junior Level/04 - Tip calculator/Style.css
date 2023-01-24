@@ -143,7 +143,7 @@ footer img {
 }
 
 #btn button:hover {
-    background-color: hsla(172, 67%, 45%, 0.677);
+    background-color: hsl(175, 48%, 76%);
     color: hsl(183, 100%, 15%);
 }
 
@@ -240,4 +240,105 @@ section footer {
     color: hsl(183, 100%, 15%);
     font-size: 1rem;
     letter-spacing: 0.05rem;
+}
+
+@media screen and (max-width: 832px) {
+    main {
+        scale: 0.9;
+    }
+}
+
+@media screen and (max-width: 752px) {
+    main {
+        scale: 0.8;
+    }
+}
+
+@media screen and (max-width: 662px) {
+    main {
+        scale: 0.7;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    main {
+        scale: 1;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    section {
+        scale: 0.85;
+        width: 100%;
+        margin: 0;
+    }
+
+    #btn {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 20px;
+        margin-bottom: 2.5rem;
+    }
+
+    #btn button,
+    #btn input {
+        height: 50px !important;
+        flex: 1 1 115px;
+    }
+
+    #amount {
+        margin: 8% 10% 0 10%;
+    }
+
+    #tipResults {
+        width: 100%;
+        scale: 0.85;
+        margin: 0 3% 3% 3%;
+    }
+
+    #tipAmt,
+    #Total {
+        font-size: 0.9rem;
+    }
+
+    #tipPerson,
+    #totalPerson {
+        font-size: 0.8rem;
+    }
+
+    #totalNumber,
+    #tipNumber {
+        font-size: 2rem;
+    }
+
+    #tot {
+        margin: 5% 10% 10% 10%;
+    }
+
+    #reset {
+        height: 3.5rem;
+    }
+
+    #resetBtn {
+        font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 444px) {
+
+        #splitter {
+            margin-top: 6vh;
+        }
+
+        main {
+            width: 100%;
+            margin-top: 2vh;
+        }
+
+        #btn button,
+        #btn input {
+            flex: 1 1 130px;
+        }
+    }
 }
