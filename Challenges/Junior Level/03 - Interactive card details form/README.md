@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/interactive-card-details-form-3MOYdQ-grH)
 - Live Site URL: [Live solution URL](https://falarzedu.github.io/Frontend-Mentor-Challenges/Challenges/Junior%20Level/03%20-%20Interactive%20card%20details%20form/)
 
 ## My process

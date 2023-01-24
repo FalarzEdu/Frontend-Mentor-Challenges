@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/expenses-chart-component-UOlCLcwhwe)
 - Live Site URL: [Add live site URL here](https://falarzedu.github.io/Expenses_chart/)
 
 ## My process
@@ -61,4 +61,3 @@ For this project I focused on JavaScript, which means I tried more to make the g
 - Frontend Mentor - [@ETUUU](https://www.frontendmentor.io/profile/yourusername)
 
   
-
